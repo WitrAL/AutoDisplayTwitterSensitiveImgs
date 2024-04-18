@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Show Sensitive Content",
+    "version": "1.0",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*://*.twitter.com/*/media"],
+            "js": ["content.js"]
+        }
+    ],
+    "action": {
+        "default_icon": "icon.png"
+    },
+    "icons": {
+        "48": "icon.png"
+    }
+}
